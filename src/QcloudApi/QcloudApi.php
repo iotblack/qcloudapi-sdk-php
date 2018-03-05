@@ -255,6 +255,12 @@ class QcloudApi
     const MODULE_EMR = "emr";
 
     /**
+     * MODULE_IOT
+     * Iot suite 物联网套件
+     */
+    const MODULE_IOT   = 'iot';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
