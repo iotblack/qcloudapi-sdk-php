@@ -2,8 +2,8 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap contact form with validation and AJAX submit</title>
-      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'>
+  <title>腾讯物联网套件主控端演示</title>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'>
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato:300,400,700'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.css'>
 
@@ -18,7 +18,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2" id='panel_settings'>
-        <H2>参数配置</H2> 
+        <strong>设备参数</strong> 
         <form id="controller-form" method="post" action="controller.php" role="form"> 
         <div class="controls">
 
@@ -78,14 +78,14 @@
             <div class="controls">
             <div class="row">
 
-            <div class="col-md-6">
-                    <H2>控制面板</H2>
+            <div class="col-md-12">
+                    <strong>控制面板</strong>
                     <div class="form-group" id='shadow_container' >
                     </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
                     <div class="form-group">
-                    <input type="button" class="btn btn-success btn-send" value="更新影子" id="btn_update_iot_shadow">
+                    <input type="button" class="btn btn-success btn-send" value="提交" id="btn_update_iot_shadow">
                     <div class="update_messages"></div> 
                     </div>
 
