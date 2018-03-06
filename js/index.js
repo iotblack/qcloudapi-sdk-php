@@ -5,6 +5,7 @@ $(function() {
     var productId  = $('#form_product_id').val();
     var deviceName = $('#form_device_name').val();
 
+    show_update_alert("alert-info", "加载中...");
     var aj = $.ajax( {
         url:'/get_iot_shadow.php',
         data:{
@@ -51,6 +52,7 @@ $(function() {
                     }
                 }
 
+                show_update_alert("alert-success", '加载成功。');
             }else{
                 show_update_alert("alert-danger", data.message);
             }
@@ -88,6 +90,8 @@ $(function() {
 
             var shadow = JSON.stringify(shadowObj);
 
+            show_update_alert("alert-info", "数据推送中...");
+
             var aj = $.ajax( {
                 url:'/update_iot_shadow.php',
                 data:{
@@ -119,8 +123,6 @@ $(function() {
 
 function show_update_alert(message_alert, message_text)
 {
-
-    // let's compose Bootstrap alert box HTML
     var alert_box =
         '<div class="alert ' +
         message_alert +

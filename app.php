@@ -37,13 +37,13 @@ $device_name=$_GET['device_name'];
                     <input id="form_device_name" type="hidden" name="device_name" value="<?php echo $device_name;?>">
 
                     <input type="button" class="btn btn-success btn-send" value="提交" id="btn_update_iot_shadow">
-                    <div class="update_messages" id="box_update_messages"></div> 
                     </div>
 
                     <div class="row">
                     <div class="col-md-12">
                     <p class="text-muted">演示页面</p>
                     </div>
+                    <div class="update_messages" id="box_update_messages"></div> 
                     </div>
             </div>
             </div>

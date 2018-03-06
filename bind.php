@@ -3,12 +3,6 @@ require 'vendor/autoload.php';
 
 use chillerlan\QRCode\{QRCode, QROptions};
 
-// $data = $_REQUEST['data'];
-// if (empty($data)) {
-    // echo "data for qr code not given.";
-    // return;
-// }
-
 $options = new QROptions([
         'version'      => 7,
         'outputType'   => QRCode::OUTPUT_IMAGE_PNG,
@@ -30,7 +24,7 @@ if (empty($device_name)) {
     return;
 }
 
-echo "<H4>请扫描如下二维码，绑定设备：$device_name </H4>";
+echo "<H4>请扫描如下二维码，绑定设备：$product_id/$device_name </H4>";
 $data = "http://iot.devhost/auth.php?product_id=$product_id&device_name=$device_name";
 echo "<a href='$data'>绑定</a><p>";
 echo '<img src="'.(new QRCode)->render($data).'" />';
