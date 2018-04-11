@@ -18,29 +18,24 @@ if (empty($app_did)) {
     return;
 }
 
-$redis = new Redis();
-$redis->connect($configs['redis_host'], $configs['redis_port']);
-$bind_product = $redis->hget("app_client_$app_did", $device_name);
-if (empty($bind_product)) {
+$secret_id = $_COOKIE[COOKIE_SECRET_ID];
+if (empty($secret_id)) {
     echo json_encode(
-        array("code" => 402, 
-        "message" => "未绑定任何设备", 
-        "codeDesc" => "设备未绑定")
+        array("code" => 402,
+        "message" => "secret id not found",
+        "codeDesc" => "当前客户端未初始化，无法读取secret id")
     );
     return;
 }
-
-if (($product_id != $bind_product)) {
+$secret_key = $_COOKIE[COOKIE_SECRET_KEY];
+if (empty($secret_key)) {
     echo json_encode(
-        array("code" => 403, 
-        "message" => "绑定关系错误", 
-        "codeDesc" => "客户端未绑定设备不对")
+        array("code" => 402,
+        "message" => "secret key not found",
+        "codeDesc" => "当前客户端未初始化，无法读取secret key")
     );
     return;
 }
-
-$secret_id = $redis->get("secretid");
-$secret_key = $redis->get("secretkey");
 
 $shadow = $_REQUEST['shadow'];
 

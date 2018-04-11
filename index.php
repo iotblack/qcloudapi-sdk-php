@@ -22,10 +22,24 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2" id='panel_settings'>
-        <strong>设备参数</strong> 
-        <form id="controller-form" method="get" action="bind.php" role="form"> 
+        <H3>设备参数</H3>
+        <form id="controller-form" method="post" action="bind.php" role="form">
         <div class="controls">
           <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_secret_id">Secret Id *</label>
+                <input id="form_secret_id" type="text" name="secret_id" class="form-control" placeholder="请输入 Secret Id*" required="required" data-error="请输入 Secret ID">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_secret_key">Secret Key *</label>
+                <input id="form_secret_key" type="text" name="secret_key" class="form-control" placeholder="请输入 Secret Key*" required="required" data-error="请输入 Secret Key">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label for="form_product_id">Product Id *</label>
@@ -50,6 +64,7 @@
         </div>
         </form>
       </div>
+        <strong>[本页面为简化演示而采用的 Secret ID 和 Secret Key 直接传递方式，仅限内部Demo使用，注意保护好您的 Secret Id 和 Secret Key，实际产品请勿照搬。]</strong>
       </div>
   </div>
 </body>
