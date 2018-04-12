@@ -1,17 +1,17 @@
 [
     {
         "name": "chillerlan/php-traits",
-        "version": "1.1.9",
-        "version_normalized": "1.1.9.0",
+        "version": "1.1.11",
+        "version_normalized": "1.1.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/chillerlan/php-traits.git",
-            "reference": "4b07ded5dd5b89c650bfb7e6301cd12249758f78"
+            "reference": "0a9fcdb05bad6ddfb4fc555bdb4458e2d5826f6a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/chillerlan/php-traits/4b07ded5dd5b89c650bfb7e6301cd12249758f78.zip",
-            "reference": "4b07ded5dd5b89c650bfb7e6301cd12249758f78",
+            "url": "https://files.phpcomposer.com/files/chillerlan/php-traits/0a9fcdb05bad6ddfb4fc555bdb4458e2d5826f6a.zip",
+            "reference": "0a9fcdb05bad6ddfb4fc555bdb4458e2d5826f6a",
             "shasum": ""
         },
         "require": {
@@ -20,7 +20,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.5"
         },
-        "time": "2018-01-28 20:33:57",
+        "time": "2018-04-10 08:26:19",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -51,17 +51,17 @@
     },
     {
         "name": "chillerlan/php-qrcode",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "2.0.6",
+        "version_normalized": "2.0.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/chillerlan/php-qrcode.git",
-            "reference": "fd679d1de2030cf06d7d2739be68c889ff712675"
+            "reference": "45577426ab8e2199aa60e00f9bd7c242c1484c97"
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/chillerlan/php-qrcode/fd679d1de2030cf06d7d2739be68c889ff712675.zip",
-            "reference": "fd679d1de2030cf06d7d2739be68c889ff712675",
+            "url": "https://files.phpcomposer.com/files/chillerlan/php-qrcode/45577426ab8e2199aa60e00f9bd7c242c1484c97.zip",
+            "reference": "45577426ab8e2199aa60e00f9bd7c242c1484c97",
             "shasum": ""
         },
         "require": {
@@ -72,7 +72,7 @@
             "chillerlan/php-authenticator": "^2.0",
             "phpunit/phpunit": "^6.5"
         },
-        "time": "2018-01-27 23:38:06",
+        "time": "2018-03-28 18:07:10",
         "type": "library",
         "extra": {
             "branch-alias": {

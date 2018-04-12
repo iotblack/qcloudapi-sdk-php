@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4a9761612fc13257aae73739a3d1d323",
-    "content-hash": "0e6123d34fc94d29c62af741b03d9766",
+    "hash": "0a9b93f40919e4a816b5fb806383206c",
+    "content-hash": "88002662af580a84fa003b4c4efa66e5",
     "packages": [
         {
             "name": "chillerlan/php-qrcode",
-            "version": "dev-master",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillerlan/php-qrcode.git",
-                "reference": "fd679d1de2030cf06d7d2739be68c889ff712675"
+                "reference": "45577426ab8e2199aa60e00f9bd7c242c1484c97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/chillerlan/php-qrcode/fd679d1de2030cf06d7d2739be68c889ff712675.zip",
-                "reference": "fd679d1de2030cf06d7d2739be68c889ff712675",
+                "url": "https://files.phpcomposer.com/files/chillerlan/php-qrcode/45577426ab8e2199aa60e00f9bd7c242c1484c97.zip",
+                "reference": "45577426ab8e2199aa60e00f9bd7c242c1484c97",
                 "shasum": ""
             },
             "require": {
@@ -60,20 +60,20 @@
             "keywords": [
                 "qr code"
             ],
-            "time": "2018-01-27 23:38:06"
+            "time": "2018-03-28 18:07:10"
         },
         {
             "name": "chillerlan/php-traits",
-            "version": "1.1.9",
+            "version": "1.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillerlan/php-traits.git",
-                "reference": "4b07ded5dd5b89c650bfb7e6301cd12249758f78"
+                "reference": "0a9fcdb05bad6ddfb4fc555bdb4458e2d5826f6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/chillerlan/php-traits/4b07ded5dd5b89c650bfb7e6301cd12249758f78.zip",
-                "reference": "4b07ded5dd5b89c650bfb7e6301cd12249758f78",
+                "url": "https://files.phpcomposer.com/files/chillerlan/php-traits/0a9fcdb05bad6ddfb4fc555bdb4458e2d5826f6a.zip",
+                "reference": "0a9fcdb05bad6ddfb4fc555bdb4458e2d5826f6a",
                 "shasum": ""
             },
             "require": {
@@ -108,15 +108,13 @@
                 "helper",
                 "trait"
             ],
-            "time": "2018-01-28 20:33:57"
+            "time": "2018-04-10 08:26:19"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "chillerlan/php-qrcode": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
