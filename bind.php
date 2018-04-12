@@ -1,6 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 include('const.php');
+$configs = include('config.php');
 
 use chillerlan\QRCode\{QRCode, QROptions};
 
@@ -39,8 +40,8 @@ if (empty($secret_key)) {
 
 $secure = strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https'?1:0;
 
-setcookie(COOKIE_SECRET_ID, $secret_id, time()+3600, "", "", $secure);
-setcookie(COOKIE_SECRET_KEY, $secret_key, time()+3600, "", "", $secure);
+setcookie(COOKIE_SECRET_ID, $secret_id, time()+$configs["secret_expire"], "", "", $secure, 1);
+setcookie(COOKIE_SECRET_KEY, $secret_key, time()+$configs["secret_expire"], "", "", $secure, 1);
 
 // output: localhost
 $host_name = $_SERVER['HTTP_HOST'];

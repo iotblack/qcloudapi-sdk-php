@@ -1,5 +1,4 @@
 <?php
 return array(
-    'redis_host' => '',
-    'redis_port' => 6379,
+    'secret_expire' => 86400,
 );
