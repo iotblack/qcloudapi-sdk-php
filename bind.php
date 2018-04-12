@@ -40,8 +40,6 @@ if (empty($secret_key)) {
 
 $secure = strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https'?1:0;
 
-setcookie(COOKIE_SECRET_ID, $secret_id, time()+$configs["secret_expire"], "", "", $secure, 1);
-setcookie(COOKIE_SECRET_KEY, $secret_key, time()+$configs["secret_expire"], "", "", $secure, 1);
 
 // output: localhost
 $host_name = $_SERVER['HTTP_HOST'];
@@ -50,7 +48,7 @@ $host_name = $_SERVER['HTTP_HOST'];
 $protocol = strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https'?'https':'http';
 
 echo "<H4>请扫描如下二维码，绑定设备：$product_id/$device_name </H4>";
-$data = "$protocol://$host_name/auth.php?product_id=$product_id&device_name=$device_name";
+$data = "$protocol://$host_name/auth.php?product_id=$product_id&device_name=$device_name&secret_id=" . urlencode($secret_id) . "&secret_key=" . urlencode($secret_key);
 echo "<a href='$data'>绑定</a><p>";
 echo '<img src="'.(new QRCode)->render($data).'" />';
 

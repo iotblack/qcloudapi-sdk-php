@@ -18,7 +18,9 @@ if (empty($app_did)) {
     return;
 }
 
-$secret_id = $_COOKIE[COOKIE_SECRET_ID];
+session_start();
+// $secret_id = $_COOKIE[COOKIE_SECRET_ID];
+$secret_id = $_SESSION[COOKIE_SECRET_ID];
 if (empty($secret_id)) {
     echo json_encode(
         array("code" => 402,
@@ -27,7 +29,7 @@ if (empty($secret_id)) {
     );
     return;
 }
-$secret_key = $_COOKIE[COOKIE_SECRET_KEY];
+$secret_key = $_SESSION[COOKIE_SECRET_KEY];
 if (empty($secret_key)) {
     echo json_encode(
         array("code" => 402,
