@@ -79,7 +79,7 @@
                 "dev-v2.0.x-php5": "1.0.8-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "chillerlan\\QRCode\\": "src/"
