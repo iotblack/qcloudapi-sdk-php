@@ -1,7 +1,6 @@
 <?php
 $product_id=$_GET['product_id'];
 $device_name=$_GET['device_name'];
-$app_did=$_COOKIE['app_did'];
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +38,7 @@ $app_did=$_COOKIE['app_did'];
                     <input type="button" class="btn btn-success btn-send" value="提交" id="btn_update_iot_shadow">
                     </div>
 
-                    <p class="text-muted">演示页面<br>[<?=$app_did?>]</p>
+                    <p class="text-muted">演示页面<br></p>
 
                     <div class="update_messages" id="box_update_messages"></div> 
             </div>

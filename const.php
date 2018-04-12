@@ -1,7 +1,6 @@
 <?php
-const COOKIE_PRODUCT_ID = 'dev_pid';
-const COOKIE_DEVICE_NAME = 'dev_dn';
-const COOKIE_APP_DEVICE_ID = 'app_did';
-const COOKIE_SECRET_ID = 'secret_id';
-const COOKIE_SECRET_KEY = 'secret_key';
+const KEY_PRODUCT_ID = 'dev_pid';
+const KEY_DEVICE_NAME = 'dev_dn';
+const KEY_SECRET_ID = 'secret_id';
+const KEY_SECRET_KEY = 'secret_key';
 
